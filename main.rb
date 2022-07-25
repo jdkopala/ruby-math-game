@@ -19,7 +19,6 @@ while game_on
       question.turn = 2
     elsif question.turn == 2
       question = Question.new
-      question.turn = 1
     end
   else
     puts "No!"
@@ -35,7 +34,6 @@ while game_on
     elsif question.turn == 2
       player2.lose_life
       question = Question.new
-      question.turn = 1
       puts "P1: #{player1.lives}/3 vs P2: #{player2.lives}/3"
       if player2.lives == 0
         puts "Game over, Player 1 is the winner with #{player1.lives}/3"
