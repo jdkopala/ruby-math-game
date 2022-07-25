@@ -8,6 +8,7 @@ question = Question.new
 game_on = true
 
 while game_on
+  puts "----NEW TURN----"
   puts question.ask_question
   answer = $stdin.gets.chomp
   if answer == question.answer
