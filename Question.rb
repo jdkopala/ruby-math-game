@@ -18,13 +18,4 @@ class Question
     question = "#{player}: What does #{num1} plus #{num2} equal?"
   end
 
-  def change_turn
-    if turn == 1
-      turn = 2
-    elsif turn == 2
-      turn = 1
-    end
-   
-  end
-
 end
